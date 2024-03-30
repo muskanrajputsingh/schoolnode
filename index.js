@@ -13,7 +13,7 @@ app.use(express.json());                           //json data server(postman) s
 app.use(require('./router/router'));
 app.use(require('./router/login'));
 
-const PORT=process.env.PORT;
+const PORT=process.env.PORT || 3000;
 
 app.listen(PORT,()=>{
     console.log(`server start at port ${PORT}`)
